@@ -1,12 +1,17 @@
+import '../styles/Person.css';
+
 const Person = (props) => {
-    const { avatar, id, name, email, description } = props.person
+    const { avatar, id, name, description } = props.person
 
     return ( 
-    <div key={id}>
+    <div className="person-card" key={id}>
         <img src={avatar} />
-        <p>{name}</p>
-        <p>{email}</p>
-        <p>{description}</p>
+
+        <div className="details">
+            <p id="full-name">{name}</p>
+            <p id="description">{description}</p>
+        </div>
+
     </div> 
     );
 }

@@ -1,7 +1,9 @@
+import '../styles/Filter.css'
+
 const Filter = (props) => {
     return ( 
     <div>
-        <input onChange={props.handleChange} />
+        <input onChange={props.handleChange} placeholder="Type a name..."/>
     </div> );
 }
  
