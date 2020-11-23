@@ -1,5 +1,6 @@
 const Person = (props) => {
-    const { avatar, id, name, email, description } = props
+    const { avatar, id, name, email, description } = props.person
+
     return ( 
     <div key={id}>
         <img src={avatar} />
